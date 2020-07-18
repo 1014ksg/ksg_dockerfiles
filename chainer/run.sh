@@ -9,6 +9,7 @@ docker run -it \
 --rm \
 -v "/etc/group:/etc/group:ro" \
 -v "/etc/passwd:/etc/passwd:ro" \
+-v "$(pwd)/../../researchutils:/researchutils" \
 -v "$(pwd)/../../action_conditional_pressure_predict:/action_conditional_pressure_predict" \
 -v "$(pwd)/../../make_dataset_GU:/make_dataset_GU" \
 --net host \

@@ -21,7 +21,8 @@ RUN ln -s /usr/bin/python3 /usr/local/bin/python && \
 
 RUN pip install --upgrade pip==19.3.1 && \
     pip install setuptools==38.2.4 && \
-    pip install cupy==6.6.0 chainer==6.6.0
+    pip install cupy==6.6.0 chainer==6.6.0 && \
+    pip install opencv-python
 
 RUN apt-get update && apt-get install apt-transport-https -y
 RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
