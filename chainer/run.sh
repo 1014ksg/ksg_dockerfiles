@@ -12,5 +12,6 @@ docker run -it \
 -v "$(pwd)/../../researchutils:/researchutils" \
 -v "$(pwd)/../../action_conditional_pressure_predict:/action_conditional_pressure_predict" \
 -v "$(pwd)/../../make_dataset_GU:/make_dataset_GU" \
+-v "$(pwd)/../../IAS_graph:/IAS_graph" \
 --net host \
 ksg_chainer
